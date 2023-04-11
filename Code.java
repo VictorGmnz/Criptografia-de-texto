@@ -8,6 +8,8 @@ public class DescriptografiaAlternativa {
 	
 		Scanner sc = new Scanner(System.in);
 		Integer loop = 1;
+		String[] arrayCripto = {};
+		String messagesCripto = "";
         
 		for(int i = 0; i < loop;){
 
@@ -16,8 +18,13 @@ public class DescriptografiaAlternativa {
 					
 			String cripto = Base64.getEncoder().encodeToString(textoPlano.getBytes());
 			System.out.println();
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			System.out.println("Texto criptografado: " + cripto);
+			
+			arrayCripto = new String[]{cripto};
+			for(int j = 0; j < arrayCripto.length;j++) {
+				messagesCripto += "\n " + arrayCripto[j] + ",";
+			}
 			
 			System.out.println();
 			Thread.sleep(1000);
@@ -32,6 +39,17 @@ public class DescriptografiaAlternativa {
 				System.out.println();
 				System.out.println("Texto descriptografo: " + textoDescripto);
 			}
+			
+			System.out.println("Deseja visualizar as mensagens anteriormente criptografadas? (S/N)");
+			question = sc.next().charAt(0);
+			sc.nextLine();
+			
+			if (question == 'S') {
+				
+				System.out.println();
+				System.out.println("Textos descriptografados anteriormente: " + messagesCripto);
+			}
+			
 			System.out.println("Caso deseje criptografar uma nova mensagem, basta digitar \"Sim\", caso contrário digite \"Não\". ");
 			String answerLoop = sc.nextLine();
 			
