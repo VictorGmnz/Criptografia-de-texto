@@ -25,7 +25,7 @@ public class DescriptografiaAlternativa {
 			System.out.println("Deseja descriptografar sua mensagem? (S/N)");
 			char question = sc.next().charAt(0);
 			sc.nextLine();
-					
+
 			if (question == 'S') {
 				byte[] byteDescripto = Base64.getDecoder().decode(cripto);
 				String textoDescripto = new String(byteDescripto);
