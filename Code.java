@@ -8,9 +8,8 @@ public class DescriptografiaAlternativa {
 	
 		Scanner sc = new Scanner(System.in);
 		Integer loop = 1;
-        Integer i = 0;
         
-		while(i < loop){
+		for(int i = 0; i < loop;){
 
 			System.out.println("Introduza uma frase para ser criptografada:");
 			String textoPlano = sc.nextLine();
@@ -25,7 +24,7 @@ public class DescriptografiaAlternativa {
 			System.out.println("Deseja descriptografar sua mensagem? (S/N)");
 			char question = sc.next().charAt(0);
 			sc.nextLine();
-
+					
 			if (question == 'S') {
 				byte[] byteDescripto = Base64.getDecoder().decode(cripto);
 				String textoDescripto = new String(byteDescripto);
