@@ -23,7 +23,7 @@ public class DescriptografiaAlternativa {
 			
 			arrayCripto = new String[]{cripto};
 			for(int j = 0; j < arrayCripto.length;j++) {
-				messagesCripto += "\n " + arrayCripto[j] + ",";
+				messagesCripto += "\n " + arrayCripto[j];
 			}
 			
 			System.out.println();
