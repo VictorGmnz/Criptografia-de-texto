@@ -1,6 +1,6 @@
 # Criptografia-de-texto
 
-// Aplicação para trabalho </br> 
+// Aplicação exemplo LGPD </br> 
 // Objetivo: Criar uma aplicação que receba uma mensagem(Podendo receber palavras, ou frases) e, em seguida, devolva a mesma mensagem convertida em criptografia. </br>
 // Funcionalidade: A funcionalidade da aplicação,como ja dito no objetivo, parte de uma solicitação do código para o usuário escrever sua mensagem, e posteriormente recebê-la criptografada. Porém como a ideia é simples, o código recebeu 3 adições que exemplificam na prática o uso de lógica e estruturas que são essenciais para qualquer aplicação atualmente; </br>
 - Primeiro o código após devolver a mensagem criptografada, pergunta ao usuário se ele deseja descriptografá-la ou não(Caso digitado "S" então a mensagem é descriptografada, caso digitado "N" ele apenas prossegue com seu funcionamento); 
